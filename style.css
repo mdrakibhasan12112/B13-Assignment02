@@ -39,8 +39,6 @@ body{
 /* navbar style */
 header{
   margin-bottom: 100px;
-  background-color: rgba(26, 11, 46, 1);
-  padding-top: 22px;
  background-image: url(images/hero-circle.png), url(images/hero-bg.png);
  background-repeat: no-repeat;
  background-position: top center, top center;
@@ -54,12 +52,13 @@ nav{
    max-width: 1200px;
    margin: 0 auto;
    color: #fff;
+   margin-top: 22px;
 }
 nav ul {
   display: flex;
  list-style-type: none;
  gap: 32px;
-}
+align-items: center;}
 nav ul a {
  text-decoration: none;
  font-size: 1rem;
@@ -71,8 +70,12 @@ nav ul a {
 .logo p{
  font-size:1.5rem;
 font-weight:700 ;
-
 }
+small{
+  display: none;
+}
+
+
 .logo .heilight{
 background: linear-gradient(#F7E93F,#FB09B4,#9100F8);
 -webkit-background-clip: text;
@@ -241,16 +244,61 @@ grid-template-rows: repeat(3, 200px);
  max-width: 1200px;
  margin: 0 auto;
 }
+#featured h2{
+  margin-bottom: 40px;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
 .box-container{
  display: flex;
  gap: 30px;
 }
 .box{
  width: 380px;
- height: 250px;
- border: 1px solid red;
+ height: 440px;
  margin-bottom: 120px;
 }
+.box iframe{
+  width: 380px;
+  height: 214px;
+  border-radius: 24px 24px 0 0;
+}
+.box-text{
+  padding: 20px;
+  border-radius: 0px 0px 24px 24px;
+    background: rgba(37, 13, 68, 1);
+}
+
+.box-text h5{
+font-size: 1.5rem;
+font-weight: 700;
+color: #ffffff;
+}
+.box-text p{
+font-size: 16px;
+  font-weight: 400;
+color: #ffffff;
+margin-top: 12px;
+margin-bottom: 12px;
+}
+.clock-icon{
+  display: flex;
+  gap: 10px;
+}
+.clock-icon img{
+  width: 20px;
+  height: 20px;
+}
+.clock-icon p{
+ color: #00FF88;
+ gap: 10px;
+}
+
+
+
+
 
 /* meet style */
 section h2{
@@ -308,6 +356,7 @@ height: 40px;
  height: 412px;
 background-repeat: no-repeat;
   background-position: top center;
+  position: relative;
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
@@ -353,5 +402,144 @@ font-size: 1rem;
   font-weight: 400;
   margin-top: 32px;
   color: #ffffff;
+}
+
+
+
+/* responsive design */
+@media screen and (max-width:576px){
+  /* footer */
+  #footer{
+          max-width: 576px;
+          height: auto;
+          background-repeat: no-repeat;
+          background-position: top center;
+          position: relative;
+          margin: 0 auto;
+          margin-top: 50px;
+          flex-direction: column;
+        }
+  
+.logo-link{
+  flex-direction: column;
+  gap: 20px;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.copyright{
+  margin-bottom: 30px;
+}
+/* meet section */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.meet{
+  max-width: 576px;
+  border-radius: 5px;
+}
+.meet-content {
+  flex-direction: column;
+align-items: center;
+}
+.meet-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.meet-text p{
+  text-align: center;
+}
+ul{
+  justify-content: center;
+}
+/* techwave section */
+.techwave {
+  max-width: 576px;
+  margin-bottom: 100px;
+}
+.techwave-title h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 50px;
+margin-bottom: 30px;
+}
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.first-layout{
+  border-radius: 15px;
+  padding: 20px;
+}
+.secend-layout{
+  border-radius: 15px;
+    padding: 20px;
+}
+/* About section */
+.about-content {
+  max-width: 576px;
+  margin-top: 60px;
+}
+.about-title h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.about-title p {
+  margin-bottom: 50px;
+  padding: 20px;
+}
+hr {
+  color: rgba(31, 30, 30, 0.072);
+  margin-bottom: 50px;
+}
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 55px;
+}
+.card{
+  margin-bottom: 50px;
+}
+/* featured section */
+#featured{
+  max-width: 576px;
+}
+.box-container {
+flex-direction: column;
+  gap: 10px;
+}
+.box {
+width: 100%;
+  margin-bottom: -20px;
+}
+.box iframe {
+  width:100%;
+}
+#featured h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+/* navbar */
+.nav-container{
+display: none;
+}
+small{
+  display: inline;
+}
+
+
+
+
+
+
 }
 
