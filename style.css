@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: rgba(26, 11, 46, 1);
 }
@@ -26,6 +27,7 @@ body {
   border-radius: 50px;
   background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
 }
+
 .btn:hover {
   cursor: pointer;
 }
@@ -80,6 +82,7 @@ nav ul a {
   color: #fff;
   justify-content: space-between;
 }
+
 .logo p {
   font-size: 1.5rem;
   font-weight: 700;
@@ -87,6 +90,12 @@ nav ul a {
 
 small {
   display: none;
+}
+
+.heilight {
+  background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -100,6 +109,7 @@ small {
   from {
     transform: translateY(0);
   }
+
   to {
     transform: translateY(-10px);
   }
@@ -128,6 +138,7 @@ small {
 .banner-image {
   position: relative;
 }
+
 .banner-image .img-2 {
   position: relative;
   background-position: center;
@@ -224,6 +235,7 @@ hr {
   margin: 0 auto;
   margin-bottom: 120px;
 }
+
 .techwave-title h2 {
   text-align: center;
   font-size: 48px;
@@ -255,10 +267,12 @@ hr {
   background: rgba(53, 17, 101, 0.4);
   padding: 30px 40px;
 }
+
 .first-layout img {
   width: 60px;
   height: 60px;
 }
+
 .first-layout h4 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -299,6 +313,7 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 #featured h2 {
   margin-bottom: 40px;
   font-size: 4rem;
@@ -457,6 +472,7 @@ ul li img {
   width: 24px;
   height: 24px;
 }
+
 .logo-name p {
   color: #ffffff;
 }
@@ -525,6 +541,7 @@ ul li img {
   .meet-text p {
     text-align: center;
   }
+
   ul {
     justify-content: center;
   }
@@ -542,6 +559,7 @@ ul li img {
     margin-top: 50px;
     margin-bottom: 30px;
   }
+
   .container {
     display: grid;
     gap: 15px;
@@ -638,7 +656,8 @@ ul li img {
     right: 32%;
     z-index: 2;
   }
-    .tooltip {
-      right: 19%;
-    }
+
+  .tooltip {
+    right: 19%;
+  }
 }
